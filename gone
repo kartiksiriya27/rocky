@@ -1,0 +1,21 @@
+
+pipeline {
+    agent any
+ 
+    stages {
+ 
+ 
+        stage('Print') {
+            steps {
+                echo 'hi indu'
+            }
+        }
+ 
+        stage('Clone') {
+            steps {
+                sh 'git clone -b master https://github.com/kartiksiriya27/rocky.git'
+            }
+        }
+ 
+    }
+}
