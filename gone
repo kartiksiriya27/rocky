@@ -11,11 +11,11 @@ pipeline {
             }
         }
  
-        stage('Clone') {
-            steps {
-                sh 'git clone -b master https://github.com/kartiksiriya27/rocky.git'
-            }
-        }
+        //stage('Clone') {
+          //  steps {
+            //    sh 'git clone -b master https://github.com/kartiksiriya27/rocky.git'
+            //}
+       // }
  
     }
 }
